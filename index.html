@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Presentation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="logo.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./lang/idioma.js"></script>
+</head>
+<body>
+    <div id="corp">
+
+        <header>
+            <div id="languaje">
+                <span class="en">English</span>
+                <input type="checkbox" class="check" />
+                <span class="es">Spanish</span>
+            </div>
+            <h1>Welcome</h1>
+            <div id="fechahoy"></div>
+        </header>
+        
+        <!-- Contenido general con la informacion esencial -->
+
+        <section>       
+            <article id="partOne">
+                <figure>
+                    <img id="imgPer" src="./img/imagen_perfil.png">
+                    <figcaption>
+                        <p>Brian A&#241;ez</p> 
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article id="description">
+                    
+                    <p>
+                        Nice to meet you, I am a junior programmer who is passionate about technologies, studying and expanding his 
+                        knowledge in the area day by day, whether it is about knowing new programming languages ​​or knowing new 
+                        details of one in which he has a base.
+                        <br><br>
+                        I consider that I have an ability to acquire knowledge quickly and understand it, it should be noted that, 
+                        I do not have professional experience, although it would be very pleasant to be part of a company in which 
+                        I can develop my work experience and continue my university studies, in addition to looking for ways 
+                        in which it can help and even improve the development of said company.
+                    </p>
+                
+            </article>
+
+            <article id="partTwo">
+
+               <h3>Study:</h3>
+
+               <p>
+
+                <li>
+                    Systems Engineering (Studying)
+                </li>
+
+                <li>
+                    Superior Technician of Systems Engineering (Studying)
+                </li>
+
+                <li>    
+                    General studies
+                </li>
+
+               </p>
+
+                <h3>lenguages:</h3>
+
+                <p>
+
+                    <li>
+                        English A1 
+                    </li>
+ 
+                     <li>
+                        Italian A2
+                     </li>
+ 
+                 </p>
+               
+            </article>
+
+            <article id="partThree">
+
+                <h3>Knowledge:</h3>
+
+                <!-- Script que llama al array iterado del index.js -->
+
+                <div id="conoci">
+                    <script src="./index.js"></script>
+                </div>
+            </article>
+
+            <article id="nameLeg">
+                <p>
+                    <b>Name of languajes and Frameworks:</b> <br><br>
+                    Python, C++, Laravel, PHP, 
+                    HTML, CSS, Javascript, Git, 
+                    MySQL, Bootstrap and NodeJs
+                </p>
+            </article>
+
+            <h3>Contact:</h3>
+            <article id="partFour">
+
+                <a href="https://www.linkedin.com/in/brian-anez-ele20/" target="_blank"> 
+                    <img id="imgredes" src="./img/linkedin.png">
+                </a>
+
+                <a href="https://github.com/BrianAnez19?tab=repositories" target="_blank">
+                    <img id="imgredes" src="./img/github.png">
+                </a>
+
+                <a href="#" onclick="alert('Correo: briancity2311@gmail.com')">
+                    <img id="imgredes" src="./img/gmail.png">
+                </a>
+
+            </article>
+
+            <div id="contador">
+                <script>
+                    //Muestra numero de visita.
+                    var ran = Math.round(Math.random()*50000)
+                    document.write(`You are visitor number ${ran} `);
+                </script>
+            </div>
+
+        </section>
+
+    </div>
+        <footer>
+            <p>All rights reserved © 2021</p>
+        </footer>
+    </body> 

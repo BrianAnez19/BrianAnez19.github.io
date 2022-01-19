@@ -1,0 +1,269 @@
+body{
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    
+}
+
+#corp{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+header{ 
+    height: 12%;
+    margin: 0 10px;
+    padding: 5px;
+    background-color: #252850;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    
+}
+
+h1{
+    font: bold 26px 'Times New Roman';
+    text-shadow: rgba(82, 71, 71, 0.3) 5px 5px 5px;
+}
+
+section{
+    height: 12%;
+    margin: 0 10px;
+    padding: 5px 15px;
+    background-color: #252850;
+    box-sizing: border-box;
+    color: white;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    background-color: #252850;
+}
+
+#partOne{
+    margin: 0 37% 0 37%;
+    text-align: center;
+    font: normal 18px "times romans new";
+}
+
+#imgPer {
+    width: auto;
+    height: 250px;
+    /* border: rgba(103, 106, 114, 0.5) solid 1px; */
+    border-radius: 550px;
+    /* background-color: rgba(103, 106, 114, 0.5); */
+}
+
+#partTwo p{
+    font: normal 16px "times romans new";
+}
+
+#partThree figure{
+    display: inline-flex;
+    text-indent: 5px;
+}
+
+#partThree figcaption{
+    display: grid;
+    margin: 25px 0;
+}
+
+#description{
+    text-align: justify;
+    margin: 0 2%;
+    font: normal 16px "times romans new";
+}
+
+#imgleg{
+    width: auto;
+    height: 35px;
+    text-align: center;
+    border-radius: 550px;
+    border: rgba(82, 71, 71, 0.3) solid 1px;
+    background-color: rgba(82, 71, 71, 0.3);
+    box-shadow: black 5px 5px 10px;
+}
+
+#partFour{
+    margin: 0 5% 0 5%;
+}
+
+#partFour a{
+    margin: 0 5% 0 0;
+    text-decoration: none;
+}
+
+#imgredes{
+    width: auto;
+    height: 50px;
+    border: rgba(82, 71, 71, 0.3) solid 1px;
+    border-radius: 550px;
+    background-color: rgba(82, 71, 71, 0.3);
+    box-shadow: black 5px 5px 10px;
+}
+
+.en{
+    color: white;
+    margin-right: 10px;
+    clear: both;
+}
+
+.es{
+    color: white;
+    margin-left: 10px;
+    clear: both;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.check::after{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid black ;
+    box-sizing: border-box;
+}
+
+.check:checked::after{
+    left: 15px;
+    border: 1px solid #4cbbf3;
+}
+
+.check:checked::before{
+    background-color: #4cbbf3;
+}
+
+#contador{
+    display: grid;
+    justify-items: center;
+    padding: 15px;
+    border: 2px solid black;
+    width: 25%;
+    margin: 0 40%;
+    border-radius: 20px;
+    background-color: rgba(177, 0, 0, 0.603);
+}
+
+#nameLeg{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    body{
+        background-color: #252850;
+    }
+    #corp{
+        margin-left: 1%;
+    }
+    
+    @media screen and (max-width: 870px) {
+        #corp {
+            width: 100%;
+        }
+
+        #partOne{
+            margin: 0;
+            
+        }
+
+        #partFour{
+            margin: 0 35% 0 5%;
+        }
+
+        #partFour a{
+            margin: 0 10% 0 0;
+        }
+
+        #imgleg{
+            width: auto;
+            height: 30px;
+            margin: 0 5px;
+            text-align: center;
+            border-radius: 550px;
+            border: rgba(82, 71, 71, 0.3) solid 1px;
+            background-color: rgba(82, 71, 71, 0.3);
+        }
+
+        #partThree figcaption{
+            display: none;
+        }
+
+        #contador{
+            clear: both;
+            margin: 5% 35% 0 35%;
+            height: 50%;
+        }
+
+        #nameLeg{
+            display: inline;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 550px) {
+
+            #contador{
+                margin: 5% 25% 0;
+                width: fit-content;
+            }
+
+            #partFour{
+                margin: 0 3%;
+            }
+
+            #nameLeg{
+                margin: 0 0;
+                font-size: small;
+                text-align: left;
+            }
+
+        }
+        @media screen and (max-width: 400px) {
+
+            #contador{
+                margin: 5% 15% 0;
+                width: fit-content;
+            }
+
+            #partFour{
+                margin: 0 0;
+            }
+
+            #description{
+                margin: 0 0;
+                font-size: small;
+                word-spacing: 0.2px;
+            }
+
+            #corp{
+                font-size: small;
+                margin: 0 3%;
+            }
+        }
+    }
+}
